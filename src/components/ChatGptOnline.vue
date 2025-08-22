@@ -120,7 +120,7 @@ const submitSend = async (prompt) => {
 
 const sending = async (prompt) => {
   const d = await post(
-    "https://chatgpt-api.shn.hk/v1/",
+    "https://api.openai.com/v1/chat/completions",
     {
       messages: [{ role: "user", content: prompt }],
       model: "gpt-3.5-turbo",
